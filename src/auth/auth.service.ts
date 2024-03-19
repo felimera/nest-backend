@@ -17,7 +17,7 @@ export class AuthService {
   async create(createUserDto: CreateUserDto): Promise<User> {
     try {
       const newUser = new this.userModel(createUserDto);
-      return newUser.save();
+      return await newUser.save();
     } catch (error) {
       if (error.code === 11000) {
         throw new BadRequestException(`${createUserDto.email} already exists!`);
