@@ -5,6 +5,7 @@
 
 mongo/
 doc/
+.env
 
 # Logs
 logs
