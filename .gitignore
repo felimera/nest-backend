@@ -3,6 +3,9 @@
 /node_modules
 /build
 
+mongo/
+doc/
+
 # Logs
 logs
 *.log
